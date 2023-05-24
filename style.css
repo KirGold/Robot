@@ -9,7 +9,6 @@
     text-decoration: none;
 }
 .robot {
-    border: 1px solid #000;
     width: 450px;
     height: 700px;
     margin: 30px auto;
@@ -18,7 +17,111 @@
     align-items: center;
     transition: 0.5s;
 }
+body{
+    animation: backgound 5s linear infinite;
+}
+@keyframes backgound {
+    10%{
+        background-color: #b00e0e;
+    }
+    20%{
+        background-color: #c25012;
+    }
+    30%{
+    background-color: #dbb022;
+    }
+    40%{
+        background-color: #5aa623;
+    }
+    50%{
+        background-color: #29c38d;
+    }
+    60%{
+        background-color: #24a4b2;
+    }
+    70%{
+        background-color: #1c3d9f;
+    }
+    80%{
+        background-color: #431d84;
+    }
+    90%{
+        background-color: #590f6d;
+    }
+    100%{
+        background-color: #ab1e8c;
+    }
+}
+.gamer-cat{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    animation: text 2s linear;
+}
+@keyframes text{
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+        color: #c800ff;
+    }
+    50%{
+        color: #ffffff;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+        color: #00ff08;
+    }
+}
+.cat_1{
+    animation: cat_1 2s linear;
+    background: url(./img/cat\ 1.jpeg);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 20%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+@keyframes cat_1{
+    0%{
+        opacity: 0;
+        transform: translateY(700px);
+    }
+    50%{
+        transform: rotate(205deg);
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.cat_box{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+.cat_2{
+    animation: cat_1 2s linear;
+    background: url(./img/zxcursed.jpeg);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    border-radius: 20%;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.head-main_box{
+    animation: head 2s linear;
+}
+@keyframes head{
+    0%{
+        transform: rotate(500deg);
+    }
+    100%{
 
+    }
+}
 .head {
     width: 150px;
     height: 150px;
@@ -28,10 +131,12 @@
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
+
 }
+
 .ear_BOX{
     display: flex;
-    justify-content: space-between;
+    margin-left: 25px;
 }
 .ear {
     width: 0; 
@@ -39,7 +144,6 @@
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 25px solid rgb(37, 8, 63);
-    margin-right: 5px 0;
 }
 
 
@@ -48,7 +152,7 @@
     display: flex;
     justify-content: center;
     border-radius:5px;
-    padding: 2px;
+
     margin-top: 20px;
 }
 .eye {
@@ -80,6 +184,7 @@
     height: 30px;
     background-color: #ffffff;
     transition: 0.3s;
+    margin-top: 5px;
 }
 .nose:hover{
     transform: scale(1.2);
@@ -114,6 +219,16 @@
     position: relative;
     margin-top: 20px;
     border-radius: 20px;
+    animation: left-arm 2s;
+}
+@keyframes left-arm{
+    0%{
+        transform: rotate(40deg);
+        margin-right: 20px;
+    }
+    100%{
+
+    }
 }
 .tummy {
     width: 180px;
@@ -124,10 +239,20 @@
     border-radius: 50px;
     transition: 0.5s;
 }
+
+@keyframes right-arm{
+    0%{
+        transform: rotate(-40deg);
+        margin-right: 20px;
+    }
+    100%{
+    }
+    }
 .tummy:hover{
     background: url(./img/Мой\ \ друг.jpg);
     background-size: cover;
     transform: rotate(0.8turn);
+    
 }
 .arm-right {
     width: 60px;
@@ -136,6 +261,7 @@
     position: relative;
     margin-top: 20px;
     border-radius: 20px;
+    animation: right-arm 2s;
 }
 .arm-left::after{
     content: '';
@@ -167,10 +293,30 @@
     height: 230px;
     background-color: rgb(70, 20, 117);
     border-radius: 10px;
+    animation: left-leg 1s linear ;
+}
+@keyframes left-leg{
+    0%{
+        transform: rotate(40deg);
+        margin-right: 30px;
+    }
+    100%{
+
+    }
 }
 .leg-right {
     width:80px ;
     height:230px ;
     background-color: rgb(70, 20, 117);
     border-radius: 10px;
+    animation: right-leg 1s linear;
+}
+@keyframes right-leg{
+        0%{
+            transform: rotate(-40deg);
+            margin-right: 30px;
+        }
+        100%{
+    
+        }
 }
